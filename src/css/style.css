@@ -68,23 +68,20 @@ nav{
 }
 
 .main_2{
-    width: 100px;
-    height: 715px;
+    width: 100%;
+    height: 580px;
     background: #fff;
 }
 
 .title__container_2{   
-   justify-content: center;
-   float: left;
    color: #263244;
    text-align: center;
 }
 
 .title__container_2 h2{
-    margin: 105px 780px 0px 780px;
+    margin-top: 105px;
     font-size: 35px;
     font-weight: bold;
-    white-space: nowrap;
 }
 
 .title__container_2>h2:after {
@@ -110,9 +107,11 @@ nav{
     margin: auto;
 }
 
-.body__container_2>p{
+.body__container_2>h3{
     margin-top: 25px;
-    white-space: nowrap;
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 25%;
 }
 
 .body__container_2 input{
@@ -123,7 +122,7 @@ nav{
     border-radius: 5px;
     color: #6d7682;
     font-size: 13px;
-    padding: 0px 11px 0px 32px; 
+    padding: 0px 11px 0px 11px; 
     margin-top: 25px;
 }
 
@@ -452,7 +451,7 @@ display: inline-block;
     color: #6d7682;
     font-size: 13px;
     margin-top: 15px;
-    padding: 0px 345px; 
+    padding: 0px 330px; 
 }
 
 .last__container_8 input{
