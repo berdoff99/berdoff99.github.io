@@ -218,6 +218,7 @@ display: inline-block;
 
 .body__container_4 {
     text-align: left;
+    float: left;
     
 }
 
@@ -225,11 +226,11 @@ display: inline-block;
     display: inline-block;
     font-size: 15px;
     font-weight: bold;
-    margin: 10px 0px 0px 360px;
+    margin: 10px 0px 0px 380px;
 }
 
 .body__container_4 h6 {
-    margin: 10px 0px 0px 360px;
+    margin: 10px 0px 0px 380px;
 }
 
 .body__container_4 input{
@@ -242,7 +243,25 @@ display: inline-block;
     font-weight: 600;
     font-size: 15px;
     padding: 0px 30px; 
-    margin: 15px 0px 0px 357px;
+    margin: 15px 0px 0px 380px;
+}
+
+
+.body__container_right_4 {
+    max-width: 1500px;
+    padding-top: 10px;
+    padding-left: 650px;
+}
+
+.body__container_right_4 h5 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.body__container_right_4 h6{
+    margin-top: 5px;
+    word-spacing: 1px;
+    line-height: 18px;
 }
 
 .main_5{
@@ -255,7 +274,7 @@ display: inline-block;
 }
 
 .title__container_5 h2{
-    margin: 105px 0px 60px 0px;
+    margin: 205px 0px 60px 0px;
     font-size: 35px;
     font-weight: bold;
 }
@@ -431,13 +450,14 @@ display: inline-block;
 
 
 .body__container_podval_8 input{  
-    height: 34px;   
+    height: 34px;
+    width: 350px;
     text-align: left;
+    font-weight: bold;
     border: 2px solid #d2d6dc;
     background: #d2d6dc;
     color: #6d7682;
     font-size: 13px;
-    padding: 0px 140px; 
     margin-right: 15px;
     margin-left: 15px;   
 }
@@ -445,17 +465,16 @@ display: inline-block;
 
 .body__container_podval_8 textarea{
     height: 95px;
-    text-align: center;
+    width: 735px;
+    text-align: left;
     border: 2px solid #d2d6dc;
     background: #d2d6dc;
     color: #6d7682;
     font-size: 13px;
     margin-top: 15px;
-    padding: 0px 330px; 
 }
 
 .last__container_8 input{
-    
     height: 45x;
     text-align: center;
     border: 2px solid #fff;
