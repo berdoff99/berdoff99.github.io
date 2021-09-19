@@ -2,12 +2,16 @@ body{
     font-family: Arial, sans-serif;
 }
 
+
 nav{
     width: 100%;
     height: 60px;
     background: #344051;
-    background: #344051;
+    position: fixed;
+    z-index: 2;
 }
+    
+
 
 .logo{
     color: #fff;
@@ -15,12 +19,20 @@ nav{
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
+}
+
+main{
+    width: 100%;
+    height: 100%;
 }
 
 .menu{
     float: left;
     padding-left: 432px;
-}
+}   
 
 .menu li{
     float: left;
@@ -29,11 +41,52 @@ nav{
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: jump 0.4s ease forwards;
+    -o-animation: jump 0.4s ease forwards;
+    animation: jump 0.4s ease forwards;
+    opacity: 0;
+}
+
+.menu li:nth-child(2){
+  animation-delay: 0.4s;
+}   
+.menu li:nth-child(3){
+  animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+  animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+  animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+  animation-delay: 2s;
+}
+
+
+.menu li a {
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+    
+}
+
+.menu li a:visited{
+    color: white;   
+}
+
+.menu li a:hover{
+    color: #d17700;   
+}
+
+.menu li a:active{ 
+    transform: scale(1.1);
 }
 
 .main_1{
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;   
 }
 
@@ -42,6 +95,11 @@ nav{
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    -webkit-animation: name 1s ease forwards;
+    -o-animation: name 1s ease forwards;
+    animation: name 1s ease forwards;
+   animation-delay: 1s;
+   opacity: 0;
 }
 
 .title__container h1{
@@ -65,7 +123,52 @@ nav{
     font-size: 13px;
     padding: 0px 16px; 
     margin: 58px 14px 0px 14px;
+    transition: all 0.5s;
+    transform: scale(1);
 }
+
+
+.title__container input:hover{
+    background: #344051;
+    color: white;  
+}
+
+.title__container input:active{
+    transform: scale(1.2);
+}
+  
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes jump{
+    from{
+      opacity:  0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+
+@keyframes name{
+    from{
+      opacity:  0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+
 
 .main_2{
     width: 100%;
@@ -92,8 +195,12 @@ nav{
     background-color: #d17700;    
     margin: 30px auto 30px;
     margin-bottom: 60px;
+
 }
 
+.title__container_2 h2:hover{
+    color: #d17700;
+}
 
 .body__container_2>img{
     display: flex;
@@ -105,6 +212,12 @@ nav{
     box-sizing: border-box;
     object-fit: cover;
     margin: auto;
+    transition: all 1s;
+    transform: rotate(0deg);
+}
+
+.body__container_2>img:hover{
+    transform: rotate(360deg);  
 }
 
 .body__container_2>h3{
@@ -124,8 +237,15 @@ nav{
     font-size: 13px;
     padding: 0px 11px 0px 11px; 
     margin-top: 25px;
-}
+    transition: all 0.8s;
+}   
 
+
+
+.body__container_2 input:hover{
+    background: #344051;
+    color: white;  
+}
 
 
 .main_3{
@@ -156,6 +276,10 @@ nav{
     margin-bottom: 60px;
 }
 
+.title__container_3 h2:hover{
+    color: #d17700;
+}
+
 
 .body__container_3{
     text-align: center;
@@ -165,7 +289,12 @@ display: inline-block;
 .body__container_3 img{
     width: 45px;
     margin-top: 45px;
-    
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.body__container_3 img:hover{
+    transform: scale(1.3);
 }
 
 
@@ -199,6 +328,10 @@ display: inline-block;
     margin-top: 105px;
     font-size: 35px;
     font-weight: bold;
+}
+
+.title__container4 h2:hover{
+    color: #d17700;
 }
 
 .title__container4>h2:after {
@@ -244,7 +377,14 @@ display: inline-block;
     font-size: 15px;
     padding: 0px 30px; 
     margin: 15px 0px 0px 380px;
+     transition: all 0.1s;
+ 
 }
+
+.body__container_4 input:active{
+    margin-top: 5px;
+}
+
 
 
 .body__container_right_4 {
@@ -277,6 +417,10 @@ display: inline-block;
     margin: 205px 0px 60px 0px;
     font-size: 35px;
     font-weight: bold;
+}
+
+.title__container_5 h2:hover{
+    color: #d17700;
 }
 
 .title__container_5 h3{
@@ -313,8 +457,10 @@ display: inline-block;
 .main_6{
     width: 100%;
     height: 500px;
-    background: url(../img/222fon.png);
+    background: url(../img/222fon.png) no-repeat;
     background-position: center;
+    background-attachment: fixed;
+    background-size: auto 100%;
 }
 
 .title__container_6{
@@ -326,6 +472,10 @@ display: inline-block;
 .title__container_6 h2{
     font-size: 35px;
     font-weight: bold;   
+}
+
+.title__container_6 h2:hover{
+    color: #d17700;
 }
 
 
@@ -347,6 +497,19 @@ display: inline-block;
 .body__container_6 img{
     width: 45px;
 }
+
+
+.body__container_6 img{
+    width: 45px;
+    margin-top: 45px;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.body__container_6 img:hover{
+    transform: scale(1.3);
+}
+
 
 .body__container_6 h3{
     font-size: 30px;
@@ -386,9 +549,21 @@ display: inline-block;
     margin-bottom: 60px;
 }
 
+.title__container_7 h2:hover{
+    color: #d17700;
+}
 
 .body__container_7 p{
     margin: 35px 0px 35px 0px;
+}
+
+.body__container_7 img{
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.body__container_7 img:hover{
+    transform: scale(1.5);
 }
 
 
@@ -396,6 +571,14 @@ display: inline-block;
      margin: 0px 0px 50px 0px;
 }
 
+.body__container_7 input{
+    transform: scale(1);
+    transition: all 0.1s;
+}
+
+.body__container_7 input:active{
+    transform: scale(1.5);
+}
 
 .main_8{
     width: 100%;
@@ -412,6 +595,10 @@ display: inline-block;
     color: #fff;
     font-size: 35px;
     font-weight: bold;   
+}
+
+.title__container_8 h2:hover{
+    color: #d17700;
 }
 
 .title__container_8>h2:after {
@@ -447,6 +634,8 @@ display: inline-block;
     font-weight: 400;
     padding-bottom: 45px;
 }
+
+
 
 
 .body__container_podval_8 input{  
@@ -485,11 +674,30 @@ display: inline-block;
     padding: 0px 11px 0px 11px; 
     margin-top: 25px;
     margin-bottom: 75px;
+    transform: scale(1.0);
+    transition: all 0.5s;
 }
+
+.last__container_8 input:hover{
+    background: white;
+    color: black;
+}
+
+.last__container_8 input:active{
+   transform: scale(2);
+}
+
+
 
 .last__container_8 img{
     padding-left: 26px;
     padding-right: 26px;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.last__container_8 img:hover{
+    transform: scale(1.5);
 }
 
 
