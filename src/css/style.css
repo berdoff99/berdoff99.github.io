@@ -132,6 +132,10 @@ nav{
     .title_container_1 h1{
         display: none;
     }
+    .title_container_1 p{
+        margin-top: -250px;
+    }
+
 }
 
 .title_container_1 p{
@@ -142,12 +146,14 @@ nav{
 .title_container_1{
     float: left;
     width: 100%;
+    margin-top: 150px;
 }
 
 .title_container_1 h1{
     font-size: 60px;
     color: #223549;
     font-weight: bold; 
+    
 }
 
 .title_container_1 h2{
