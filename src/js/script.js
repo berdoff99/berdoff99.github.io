@@ -1,3 +1,8 @@
+$('.form-check-input').click(function() { 
+    $('input[type="radio"]').prop("click_on_page", true);
+});
+
+
 menu.onclick = function myFunction() {
   var x = document.getElementById('myTopnav');
 
@@ -18,9 +23,6 @@ var widgetOptions376010 = {
         document.getElementsByTagName(h)[0].appendChild(a)
     })();
 
-$('.form-check-input').click(function() { 
-    $('input[type="radio"]').prop("click_on_page", true);
-});
 
 
 
