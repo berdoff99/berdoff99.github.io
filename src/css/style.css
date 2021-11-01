@@ -199,6 +199,7 @@ nav{
     line-height: 1.13em;
     color: #3F3A64;
     font-family: Gilroy-bold, sans-serif;
+    cursor: pointer;
 }
 
 .container__item_1 h3{
