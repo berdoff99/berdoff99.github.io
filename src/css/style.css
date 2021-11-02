@@ -15,15 +15,20 @@ body{
     font-family: Arial, sans-serif;
 }
 
-header{
+.postix{
     width: 100%;
     background: #fff;
     display: flex;
-    position: fixed;
    -webkit-box-shadow: 0px 7px 4px -7px rgba(34, 60, 80, 0.6);
 -moz-box-shadow: 0px 7px 4px -7px rgba(34, 60, 80, 0.6);
 box-shadow: 0px 7px 4px -7px rgba(34, 60, 80, 0.6);
+position: fixed;
 }
+
+.postix.top-of-page{
+position: absolute;
+}
+
 
 .header__logo a{
     margin-left: 300px;
@@ -44,25 +49,6 @@ nav{
     padding: 5px 1px;
     margin-right: 40px;
     font-size: 12.5px;
-     -webkit-animation: jump 0.4s ease forwards;
-    -o-animation: jump 0.4s ease forwards;
-    animation: jump 0.4s ease forwards;  
-}
-
-.topnav a:nth-child(2){
-  animation-delay: 0.4s;
-}   
-.topnav a:nth-child(3){
-  animation-delay: 0.8s;
-}
-.topnav a:nth-child(4){
-  animation-delay: 1.2s;
-}
-.topnav a:nth-child(5){
-  animation-delay: 1.6s;
-}
-.topnav a:nth-child(6){
-  animation-delay: 2s;
 }
 
 
@@ -157,7 +143,7 @@ nav{
     .topnav.responsive a.icon{
         position: absolute;
         top: -50px;
-        right: -155px;
+        right: -205px;
     }
 
     .topnav.responsive a{
@@ -169,6 +155,7 @@ nav{
     .topnav.responsive a:hover{
         border-bottom: 0px;
     }
+
 }
 
 @media screen and (max-width: 370px){
@@ -176,7 +163,6 @@ nav{
     margin-left: -30px;
    }
 }
-
 
 
 .title__container_1{
@@ -189,7 +175,7 @@ nav{
 
 .container__item_1{
     padding-top: 350px;
-    margin-left: 120px;
+    margin-left: 180px;
 }
 
 .container__item_1 h2{
@@ -209,6 +195,7 @@ nav{
     line-height: 1.13em;
     color: #3F3A64;
     font-family: Gilroy-bold, sans-serif;
+    cursor: pointer;
 }
 
 .container__item_1 h3{
@@ -272,35 +259,23 @@ nav{
     font-family: Gilroy-bold, sans-serif;
 }
 
-@media screen and (max-width: 880px){
+
+
+@media screen and (max-width: 1360px){
     .title__container_1{
-     background: #EAE1D6;
+        background: #EAE1D6;
     }
 }
 
-@media screen and (max-width: 570px){
+@media screen and (max-width: 600px){
     .container__item_1{
-
+    padding-top: 150px;
+    margin-left: 0px;
+    text-align: center;
     }
-}
-
-@media screen and (max-width: 515px){
-    .container__item_1 h1,h2{
-        margin-left: -110px;
-        text-align: center;
-    }
-    .container__item_1 h3{
-        margin-left: -120px;
+    .container__item_1 button{
+        width: 100%;
         text-align: center;
     }
 
-    .title__container_1{
-        height: 1080px;
-    }
-}
-
-@media screen and (max-width: 437px) (min-width: 351px) {
-    .button__1{
-        margin-left: -60px;
-    }
 }
