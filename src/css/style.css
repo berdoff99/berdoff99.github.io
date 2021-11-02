@@ -37,6 +37,9 @@ position: absolute;
     line-height: 80px;
 }
 
+.header__logo a:active{
+    margin-top: 10px;
+}
 
 
 nav{
@@ -132,8 +135,7 @@ nav{
     .topnav.responsive{
         position: relative;
         top: 50px;
-        left: -250px;
-
+        right: 250px;
     }
 
     header .topnav.responsive{
@@ -143,25 +145,68 @@ nav{
     .topnav.responsive a.icon{
         position: absolute;
         top: -50px;
-        right: -205px;
+        right: -250px;
     }
 
     .topnav.responsive a{
         float: none;
         display: block;
         text-align: left;
+        margin-left: 10px;
     }
 
     .topnav.responsive a:hover{
         border-bottom: 0px;
     }
-
 }
 
-@media screen and (max-width: 370px){
+@media screen and (max-width: 500px){
+   
+    .topnav.responsive{
+        position: relative;
+        top: 50px;
+        right: 250px;
+    }
+
+   .topnav.responsive a.icon{
+        position: absolute;
+        top: -50px;
+        right: -235px;
+    }
+}
+
+@media screen and (max-width: 435px){
+   
+    .topnav.responsive{
+        position: relative;
+        top: 50px;
+        right: 250px;
+    }
+
+   .topnav.responsive a.icon{
+        position: absolute;
+        top: -50px;
+        right: -207px;
+    }
+}
+
+
+
+@media screen and (max-width: 375px){
    .topnav a{
     margin-left: -30px;
    }
+   .topnav.responsive{
+        position: relative;
+        top: 50px;
+        right: 250px;
+    }
+
+   .topnav.responsive a.icon{
+        position: absolute;
+        top: -50px;
+        right: -146px;
+    }
 }
 
 
