@@ -45,7 +45,7 @@ position: absolute;
 
 nav{
    margin-left: 455px;
-   margin-top: 30px;
+   margin-top: 18px;
 }
 
 .topnav a{
@@ -67,12 +67,7 @@ nav{
     font-size: 15px;
 }
 
-.topnav a.phone:hover{
-    border: 1px solid #20ad96;
-    background: #20ad96;
-    color: #fff;
-    border-radius: 5px;
-}
+
 
 .topnav .icon{
     display: none;
@@ -118,7 +113,7 @@ nav{
         display: block;
         color: #000;
         font-size: 20px;
-        margin-top: -8px;
+        margin-top: 4px;
     }
     nav{
         width: 100%;
@@ -318,11 +313,14 @@ nav{
         width: 100%;
         text-align: center;
     }
-}
+} 
 
-.about{
+.about{  
     background: #161617;
 }
+
+
+
 *,::after,::before{box-sizing:border-box;}
 section{display:block;}
 h4,h5,h6{margin-top:0;margin-bottom:.5rem;}
