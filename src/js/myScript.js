@@ -6,12 +6,3 @@ menu.onclick = function myFunction() {
     x.className = "topnav";
   }
 }
-
-$(window).on("scroll", function() {
-    var scrollPos = $(window).scrollTop();
-    if (scrollPos <= 20) {
-        $('.postix').addClass('top-of-page');
-    } else {
-        $('.postix').removeClass('top-of-page');
-    }
-})
