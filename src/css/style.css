@@ -97,6 +97,8 @@ nav{
 }
 
 
+
+
 @media screen and  (min-width: 377px) and (max-width: 900px) {
     .topnav a{
     display: none;  
@@ -144,6 +146,60 @@ nav{
         display: block;
         text-align: left;
         margin-left: 10px;
+    }
+
+    .topnav.responsive a:hover{
+        border-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .topnav a{
+    display: none;  
+    padding: 6px 10px; 
+    }
+    .header__logo a{
+        margin-left: 20px;
+        float: left;    
+    }
+    .topnav a.icon{
+        float: right;
+        display: block;
+        color: #000;
+        font-size: 20px;
+        margin-top: 2px;
+    }
+    nav{
+        width: 100%;
+    }
+
+    .topnav a.phone:hover{
+        background: none;
+        border: none;
+        
+    }
+
+    .topnav.responsive{
+        position: relative;
+        top: 50px;
+        right: 181px;
+    }
+
+    header .topnav.responsive{
+        height: 250px;
+    }
+
+    .topnav.responsive a.icon{
+        position: absolute;
+        top: -50px;
+        right: -131px !important;
+    }
+
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+        margin-left: -20px;
     }
 
     .topnav.responsive a:hover{
