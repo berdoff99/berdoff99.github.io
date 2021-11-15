@@ -194,7 +194,7 @@ nav{
     .topnav.responsive a.icon{
         position: absolute;
         top: -50px;
-        right: -174px;
+        right: -173px;
     }
 
     .topnav.responsive a{
@@ -223,12 +223,12 @@ nav{
     width: 100%;
     height: 500px;
     display: flex;
-    padding-top: 20px;
+    padding-top: 100px;
 }
 
 .slider_item{
     text-align: center;
-    padding-left: 200px;
+    padding-left: 300px;
 
 }
 
@@ -358,8 +358,8 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 @media screen and (max-width: 500px){
     .slider{
     object-fit: cover;
-    width: 300px;
-    height: 158px;
+    width: 260px;
+    height: 130px;
     border: none !important;
 }
 .slider-dots {
@@ -399,7 +399,7 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 
 .slider_item_2{
     text-align: center;
-    padding-left: 200px;
+    padding-left: 300px;
 
 }
 
