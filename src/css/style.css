@@ -95,14 +95,13 @@ nav{
 
 
 @media screen and (max-width: 1205px){
-    
     nav{
    margin-left: 100px;
 }
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
     .topnav a{
     display: none;  
     padding: 6px 10px; 
@@ -141,7 +140,7 @@ nav{
     .topnav.responsive a.icon{
         position: absolute;
         top: -50px;
-        right: -182px;
+        right: -136px;
     }
 
     .topnav.responsive a{
