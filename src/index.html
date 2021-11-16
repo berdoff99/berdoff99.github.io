@@ -139,11 +139,11 @@
       <div class="section-head text-center col-md-12 animate__animated animate__headShake">
         <h4>Прайс</h4>  
       </div>
-      <div class="variants variants--8811 element-animation">
+      <div class="variants variants--8811">
         <div class="variants__container container">
           <div class="variants__grid">       
             <div class="variants-option option">
-          <div class="option__wrapper">
+          <div class="option__wrapper element-animation">
         <div class="option__header">
           <h3 class="option__title">Одностраничный сайт</h3>
         </div>
@@ -163,7 +163,7 @@
       </div>
 
   <div class="variants-option option">
-          <div class="option__wrapper">
+          <div class="option__wrapper element-animation">
         <div class="option__header">
                       <h3 class="option__title">Сайт-каталог услуг, товаров</h3>
                             </div>
@@ -182,7 +182,7 @@
                       </div>
       </div>
   <div class="variants-option option">
-          <div class="option__wrapper">
+          <div class="option__wrapper element-animation">
         <div class="option__header">
                       <h3 class="option__title">Веб дизайн</h3>
                             </div>
@@ -200,7 +200,7 @@
       </div>
 
   <div class="variants-option option">
-          <div class="option__wrapper">
+          <div class="option__wrapper element-animation">
         <div class="option__header">
                       <h3 class="option__title">Контекстная реклама
                             </div>
@@ -229,21 +229,20 @@
                           <h4>Мои контакты</h4>  
                       </div>
             <div class="body__container_podval_8">
-                <form>
-  <div class="mb-3">
-    <input type="text" class="form-control" id="examplename" aria-describedby="First-Name" placeholder="Введите имя">
-
-    <input type="text" class="form-control" id="examplename" aria-describedby="Last-Name" placeholder="Введите фамилию">
-  </div>
-  <div class="mb-3">
-   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваша почта">
-    <input type="phone"  class="form-control" id="inputTel" placeholder="Ваш номер телефона">
-  </div>
-  <div class="mb-3">
-   <label for="exampleInputPassword1" class="form-label" >Оставьте сообщение:</label>
-    <textarea name=""  class="form-control" id="area" cols="30" rows="10"></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary">Отправить</button>
+<form action="php/mail.php" method="post">
+    <div class="mb-3">
+        <input type="text" name="user_first" class="form-control" required id="examplename" aria-describedby="First-Name" placeholder="Введите имя">
+        <input type="text" name="user_last" class="form-control"  id="examplename2" aria-describedby="Last-Name" placeholder="Введите фамилию">
+    </div>
+    <div class="mb-3">
+        <input type="email" name="user_email" required class="form-control"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваша почта">
+        <input type="phone" name="user_phone" class="form-control"  required id="inputTel" placeholder="Ваш номер телефона">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" >Оставьте сообщение:</label>
+        <textarea name=""  class="form-control" id="area" cols="30" rows="10"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Отправить</button>
 </form>
                 </div>
         </div>
