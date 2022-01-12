@@ -16,7 +16,7 @@ $(document).ready(function(){
          observer.observe(el);
      });
     
-     $('form').submit(function(event){
+     $('#ne_modal').submit(function(event){
         event.preventDefault();
         
         $.ajax({
@@ -26,7 +26,22 @@ $(document).ready(function(){
         }).done(function (){
             $(this).find("input").val("");
             alert("Успешно отправлено!");
-            $("form").trigger("reset");
+            $("#ne_modal").trigger("reset");
+        });
+        return false;
+    });
+    
+    $('#modals').submit(function(event){
+        event.preventDefault();
+        
+        $.ajax({
+            type: "POST",
+            url: "php/modal.php",
+            data: $(this).serialize()
+        }).done(function (){
+            $(this).find("input").val("");
+            alert("Успешно отправлено!");
+            $("#modals").trigger("reset");
         });
         return false;
     });
@@ -34,7 +49,8 @@ $(document).ready(function(){
     
    $("#inputTel").mask("+7(999) 999-9999");
 
-    $('form').submit(function(event){
+
+   $('#ne_modal').submit(function(event){
     if ($("#examplename").val() == ""){
         event.preventDefault();
         alert("Введите имя");
@@ -42,18 +58,43 @@ $(document).ready(function(){
         });
     
     
-    $('form').submit(function(event){
+    $('#ne_modal').submit(function(event){
     if ($("#inputTel").val() == ""){
         event.preventDefault();
         alert("Введите телефон");
     }
         }); 
-    $('form').submit(function(event){
+    $('#ne_modal').submit(function(event){
     if ($("#exampleInputEmail1").val() == ""){
         event.preventDefault();
         alert("Введите email");
     }
         });
+    
+    
+    
+    $('#modal').submit(function(event){
+    if ($("#examplename_modal").val() == ""){
+        event.preventDefault();
+        alert("Введите имя");
+    }
+        });
+    
+    
+    $('#modal').submit(function(event){
+    if ($("#inputTel_modal").val() == ""){
+        event.preventDefault();
+        alert("Введите телефон");
+    }
+        }); 
+    $('#modal').submit(function(event){
+    if ($("#exampleInputEmail1_modal").val() == ""){
+        event.preventDefault();
+        alert("Введите email");
+    }
+        });
+    
+    
     
 });
 

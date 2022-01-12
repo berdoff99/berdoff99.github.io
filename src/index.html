@@ -9,11 +9,11 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>YuriBerdoff</title>
+	<title>Ibragim Magomedov</title>
 </head>
 <body>
   <header>
-    <div class="header__logo animate__animated animate__backInLeft"> <a href="">BERDOFF</a></div>
+    <div class="header__logo animate__animated animate__backInLeft"> <a href="">MAGOMEDOV</a></div>
     <nav>
       <div class="topnav animate__animated animate__bounceIn" id="myTopnav">
         <a href="#about">ОБО МНЕ</a>
@@ -22,27 +22,62 @@
         <a href="#prais">ПРАЙС</a>
         <!--<a href="#">ОТЗЫВЫ</a>-->
         <a href="#contacts">КОНТАКТЫ</a>
-        <a href="tel:+7(988)633-67-41" class="phone">+7 (988) 633-67-41</a>
+        <a href="tel:+7(989)495-50-00" class="phone">+7 (989) 495-50-00</a>
         <a href="#" id="menu" class="icon">&#9776;</a>
       </div>
     </nav>
   </header>
   <main>
     <section class="title__container_1">
-      <div class="container__item_1 animate__animated animate__bounceInLeft">
-        <h2>YURI BERDOFF PRESENTS</h2>
+     <div class="containerss_1 animate__animated animate__bounceInLeft">
+      <div class="container__item_1 ">
+        <h2>IBRAGIM MAGOMEDOV PRESENTS</h2>
         <h1>Закажи сайт <br>  одним кликом</h1>
         <h3>Правильные отношения наставничества  могут быть мощным <br> инструментом для профессионального роста.<br> Закалывайте правильное дерево.
         </h3>
-        <button type="button" class="button__1">
+       <a href="mailto:magomedov025@yahoo.com">
+        <button type="button" class="button__1 "> Написать
+         <!--
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-cloud-download-fill" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M8 0a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 4.095 0 5.555 0 7.318 0 9.366 1.708 11 3.781 11H7.5V5.5a.5.5 0 0 1 1 0V11h4.188C14.502 11 16 9.57 16 7.773c0-1.636-1.242-2.969-2.834-3.194C12.923 1.999 10.69 0 8 0zm-.354 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V11h-1v3.293l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/></svg> <span class="download_loader">Мои работы</span>
+          <path fill-rule="evenodd" d="M8 0a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 4.095 0 5.555 0 7.318 0 9.366 1.708 11 3.781 11H7.5V5.5a.5.5 0 0 1 1 0V11h4.188C14.502 11 16 9.57 16 7.773c0-1.636-1.242-2.969-2.834-3.194C12.923 1.999 10.69 0 8 0zm-.354 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V11h-1v3.293l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/></svg> <span class="download_loader">Мои работы</span>-->
         </button>
-        <button type="button" class="button__2">
-          Заказать
-        </button>
+          </a>
       </div>
-    </section>
+
+
+      <button type="button" class="button__2"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+Заказать</button>
+
+        </div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<form id="modals" action="php/modal.php" method="post">
+    <div class="mb-3">
+        <input type="text" name="user_first_modal" class="form-control" required id="examplename_modal" aria-describedby="First-Name" placeholder="Введите имя">
+        <input type="text" name="user_last_modal" class="form-control"  id="examplename2_modal" aria-describedby="Last-Name" placeholder="Введите фамилию">
+    </div>
+    <div class="mb-3">
+        <input type="email" name="user_email_modal"  class="form-control" required id="exampleInputEmail1_modal" aria-describedby="emailHelp" placeholder="Ваша почта">
+        <input type="phone" name="user_phone_modal" class="form-control"  required id="inputTel_modal" placeholder="Ваш номер телефона">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" >Оставьте ваше сообщение:</label>
+        <textarea name="user_message_modal"  class="form-control" id="area_modal" cols="30" rows="10"></textarea>
+    </div>
+    <button type="submit" class="modal_bbtton" class="btn btn-primary">Отправить</button>
+    <button type="button" class="modal_bbtton" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+</form>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section class="about" data-scroll-index="1" id="about">
       <div class="container">
@@ -83,8 +118,8 @@
                   <p>Позже переквалифицировался и занимаюсь веб-разработкой.</p>
                   <div class="social mt-40 element-animation">
                     <span>Мои профили:</span>
-                    <a href="https://www.instagram.com/yuriberdoff"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="https://vk.com/yuripublick"><i class="fa fa-vk"></i></a>
+                    <a href="https://www.instagram.com/ibrashkasvg"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://vk.com/aossss"><i class="fa fa-vk"></i></a>
                     <a href="https://t.me/avroraoss"><i class="fa fa-telegram"></i></a>
                     <a href=" https://wa.me/79894955000"><i class="fa fa-whatsapp"></i></a>
                     <!--<a href="https://www.skype.com/ru/"><i class="fa fa-skype"></i></a>-->
@@ -229,18 +264,18 @@
                           <h4>Мои контакты</h4>  
                       </div>
             <div class="body__container_podval_8">
-<form action="php/mail.php" method="post">
+<form id="ne_modal" action="php/mail.php" method="post">
     <div class="mb-3">
         <input type="text" name="user_first" class="form-control" required id="examplename" aria-describedby="First-Name" placeholder="Введите имя">
         <input type="text" name="user_last" class="form-control"  id="examplename2" aria-describedby="Last-Name" placeholder="Введите фамилию">
     </div>
     <div class="mb-3">
-        <input type="email" name="user_email" required class="form-control"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваша почта">
-        <input type="phone" name="user_phone" class="form-control"  required id="inputTel" placeholder="Ваш номер телефона">
+        <input type="email" name="user_email"  class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваша почта">
+        <input type="phone" name="user_phone" class="form-control" required id="inputTel" placeholder="Ваш номер телефона">
     </div>
     <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label" >Оставьте сообщение:</label>
-        <textarea name=""  class="form-control" id="area" cols="30" rows="10"></textarea>
+        <label for="exampleInputPassword1" class="form-label" >Оставьте ваше сообщение:</label>
+        <textarea name="user_message"  class="form-control" id="area" cols="30" rows="10"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Отправить</button>
 </form>
@@ -254,23 +289,24 @@
 
 <footer class="text-center ">
             <div class="container element-animation">
-                <a class="logo" href="#"> BERDOFF        
+                <a class="logo" href="#"> MAGOMEDOV        
                 </a>
                 
                 <div class="social">
-                       <a href="https://www.instagram.com/yuriberdoff"><i class="fa fa-instagram" aria-hidden="true"></i>
+                       <a href="https://www.instagram.com/ibrashkasvg"><i class="fa fa-instagram" aria-hidden="true"></i>
                                 </a>
-                                <a href="https://vk.com/yuripublick"><i class="fa fa-vk"></i></a>
+                                <a href="https://vk.com/aossss"><i class="fa fa-vk"></i></a>
                                 <a href="t.me/avroraoss"><i class="fa fa-telegram"></i></a>
                                 <a href=" https://wa.me/79894955000"><i class="fa fa-whatsapp"></i></a>
                                 <!--<a href="Skype:xboxer45?add"><i class="fa fa-skype"></i></a>-->
                 </div>
                 
-                <p>© 2020 Yuri Berdoff. All Rights Reserved.</p>
+                <p>© 2020 IBRAGIM MAGOMEDOV. All Rights Reserved.</p>
             </div>
         </footer>
 
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/maskedinput.min.js"></script>
   <script src="js/myScript.js"></script>

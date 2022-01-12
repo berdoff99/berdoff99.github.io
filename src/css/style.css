@@ -152,9 +152,26 @@ nav{
 
     .topnav.responsive a:hover{
         border-bottom: 0px;
+        
     }
 }
 
+.modal_bbtton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid 6px transparent;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    padding: 8px 19px;
+    letter-spacing: 0.5px;
+    min-width: 228px;
+    border-radius: 5px;
+}
 
 .title__container_1{
     width: 100%;
@@ -215,6 +232,18 @@ nav{
     margin-right: 10px;
     color: #161617;
 }
+
+
+.container__item_1 a{
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-transform: none;
+    margin-right: 10px;
+}
+
 .button__2{
     background-color: #161617;
     border: 1px solid #161617;
@@ -256,7 +285,18 @@ nav{
     margin-left: 0px;
     text-align: center;
     }
-    .container__item_1 button{
+      
+    .container__item_1 a{
+        width: 100%;
+        text-align: center;
+        max-width: 300px;
+        margin: 13px auto;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0)
+    }
+    
+    .containerss_1 button{
         width: 100%;
         text-align: center;
         max-width: 300px;
@@ -273,6 +313,7 @@ nav{
 *,::after,::before{
     box-sizing:border-box;
 }
+
 
 .container{
     width:100%;
