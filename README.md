@@ -1,2 +1,2 @@
 # Ibragim Magomedov
-xd
+
